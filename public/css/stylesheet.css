@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    border: none;
+    
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;       
+}
+
+#container-all{
+  
+
+    background-image: url('viaLactea.jpg');
+    background-size: 100%;
+    min-width: 1920px;
+    min-height: 960px;
+    
+}
+
+
+section#conteudo-view{
+    width: 600px;
+    height: 500px;
+    background-color: rgba(255, 255,255,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    
+}
+section#conteudo-view h1{
+    font-size: 6em;
+    color: deepskyblue;
+    text-shadow: 1px 1px 1px #111111;
+
+}
+
+section#conteudo-view h2{
+    font-size: 2em;
+    color: deepskyblue;
+    text-shadow: 1px 1px 1px #111111;
+}
+
+section#conteudo-view form{
+
+}
+section#conteudo-view form label{
+    
+}
+section#conteudo-view form label input{
+    
+}
+section#conteudo-view form input {
+    
+}
