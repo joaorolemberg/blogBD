@@ -26,8 +26,7 @@ section#conteudo-view{
     height: 500px;
     background-color: rgba(255, 255,255,0.5);
     display: flex;
-    flex-direction: column;
-    align-items: center;    
+    flex-direction: column;    
     position: absolute;
     top: 20%;
     left: 35%;
@@ -37,6 +36,7 @@ section#conteudo-view h1{
     font-size: 6em;
     color: deepskyblue;
     text-shadow: 1px 1px 1px #111111;
+    text-align: center;
 
 }
 
@@ -44,17 +44,40 @@ section#conteudo-view h2{
     font-size: 2em;
     color: deepskyblue;
     text-shadow: 1px 1px 1px #111111;
+    text-align: center;
 }
 
-section#conteudo-view form{
-
-}
+section#conteudo-view form,
 section#conteudo-view form label{
-    
+
 }
+
+section#conteudo-view form p{
+    padding: 0.5cm 0cm 0.5cm 1cm;
+    font-size: 1.5em;
+    color: deepskyblue;
+    text-shadow: 1px 1px 1px #111111;
+
+}
+
 section#conteudo-view form label input{
+    width: 95%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+    
     
 }
-section#conteudo-view form input {
+section#conteudo-view form input[type ="submit"] {
+    text-align: center;
+    width: 10%;
+    height: 20%;
+    margin-top: 20px;
+    margin-left: 500px;
+    border-radius: 10px;
+    background-color: deepskyblue;
     
 }
