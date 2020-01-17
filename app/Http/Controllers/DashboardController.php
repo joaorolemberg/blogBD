@@ -13,7 +13,7 @@ class DashboardController extends Controller
     public function index(){
         
         
-        return "Estamos na index";
+        return view('user.homepage');
     }
 
     private $repository;
