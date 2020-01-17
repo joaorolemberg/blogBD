@@ -18,7 +18,7 @@
 
                     {!! Form::open(['route'=> 'user.login','method' => 'post'])!!}
                     
-                    <p>Entre no sistema</p>
+                    <h3>Entre no sistema</h3>
 
                     <label>
                         {!! Form:: text('username',null,['class'=>'input','placeholder'=>"Usuário"])!!}

@@ -14,9 +14,11 @@
   
 
     background-image: url('viaLactea.jpg');
-    background-size: 100%;
-    min-width: 1920px;
-    min-height: 960px;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
     
 }
 
@@ -24,7 +26,7 @@
 section#conteudo-view{
     width: 600px;
     height: 500px;
-    background-color: rgba(255, 255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     display: flex;
     flex-direction: column;    
     position: absolute;
@@ -33,17 +35,19 @@ section#conteudo-view{
     
 }
 section#conteudo-view h1{
-    font-size: 6em;
-    color: deepskyblue;
-    text-shadow: 1px 1px 1px #111111;
+    padding: 0.5cm 0cm 0cm 0cm;
+    font-size: 7em;
+    /*color: deepskyblue;*/
+    color:  rgba(146,101,71,1);
+    text-shadow: 1px 1px 1px #ffffff;
     text-align: center;
 
 }
 
 section#conteudo-view h2{
     font-size: 2em;
-    color: deepskyblue;
-    text-shadow: 1px 1px 1px #111111;
+    color: rgba(146,101,71,1);
+    text-shadow: 1px 1px 1px #ffffff;
     text-align: center;
 }
 
@@ -52,11 +56,11 @@ section#conteudo-view form label{
 
 }
 
-section#conteudo-view form p{
-    padding: 0.5cm 0cm 0.5cm 1cm;
+section#conteudo-view form h3{
+    padding: 1.5cm 0cm 0.5cm 1cm;
     font-size: 1.5em;
-    color: deepskyblue;
-    text-shadow: 1px 1px 1px #111111;
+    color: rgb(146,101,71);
+    text-shadow: 0.5px 0.5px 0.5px #ffffff;
 
 }
 
@@ -67,17 +71,20 @@ section#conteudo-view form label input{
     padding: 0 20px;
     margin-top: 5px;
     margin-left: 10px;
+    font-size: 1.2em;
     
     
     
 }
 section#conteudo-view form input[type ="submit"] {
     text-align: center;
-    width: 10%;
+    font-size: 1.5em;
+    color: white;
+    width: 30%;
     height: 20%;
     margin-top: 20px;
-    margin-left: 500px;
+    margin-left: 400px;
     border-radius: 10px;
-    background-color: deepskyblue;
+    background-color: rgba(146,101,71,1);
     
 }

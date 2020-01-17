@@ -15,8 +15,20 @@ Route::get('/', ['uses'  => 'Controller@homepage']);
 Route::get('/cadastro', ['uses'  => 'Controller@cadastrarUsuario']);
 
 Route::get('/login', ['uses'  => 'Controller@fazerLogin']);
-Route::post('/login', ['as'=>'user.login','uses'  => 'Controller@login']);
+Route::post('/login', ['as'=>'user.login','uses'  => 'DashboardController@auth']);
+//Route::get('/homepage', ['as'=>'user.homepage','uses'  => 'DashboardController@index'])->middleware(['authUser']);
 
-Route::get('/joao', function () {
-    echo "gostoso";
+Route::group(['middleware'=>['auth']],function(){
+
+    Route::get('/logout',function(){
+        Auth::logout();
+        return redirect()->route('user.login');
+    });
+
+    Route::get('/homepage', ['as'=>'user.homepage','uses'  => 'DashboardController@index']);
+
+
+
 });
+
+
