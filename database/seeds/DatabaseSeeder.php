@@ -14,9 +14,9 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         User::create([
-            'nome'=>'Maria Clara',
-            'username'=>'claracampos',
-            'password'=>bcrypt('jojoba')
+            'nome'=>'Wendel',
+            'username'=>'wendel',
+            'password'=>bcrypt('lindao')
         ]);
     }
 }

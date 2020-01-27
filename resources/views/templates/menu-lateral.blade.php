@@ -1,31 +1,19 @@
 <nav id="lateralPrincipal">
     <ul>
         <li>
-            <a href="">
-                <i class=""></i>
-                <h3>Consultar</h3>
-            </a>
+            
+            <button class= "testeBotao" onclick="redirect('/planeta/consultar')">Consultar</button>
 
         </li>
         <li>
-            <a href="">
-                <i class=""></i>
-                <h3>Inserir</h3>
-            </a>
+            <button class= "testeBotao" onclick="redirect('/planeta/inserir')">Inserir</button>
+        </li>
+        <li>
+            <button class= "testeBotao" onclick="redirect('/planeta/alterar')">Alterar</button>
 
         </li>
         <li>
-            <a href="">
-                <i class=""></i>
-                <h3>Alterar</h3>
-            </a>
-
-        </li>
-        <li>
-            <a href="">
-                <i class=""></i>
-                <h3>Excluir</h3>
-            </a>
+            <button class= "testeBotao" onclick="redirect('/planeta/excluir')" >Excluir</button>
 
         </li>
     </ul>

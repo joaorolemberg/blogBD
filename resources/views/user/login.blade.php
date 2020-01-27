@@ -25,7 +25,7 @@
                     </label>
 
                     <label>
-                    {!! Form:: password('password',['placeholder'=>"Senha"])!!}
+                        {!! Form:: password('password',['placeholder'=>"Senha"])!!}
                     </label>
                     
                     {!!Form::submit('Entrar')!!}

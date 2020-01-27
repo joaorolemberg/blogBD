@@ -24,9 +24,15 @@
     height: 100%;
     clear: both;
 }
+#conteinerAll{
+margin: auto;
+width: auto;
 
+}
 #cabecalhoMaster{
+   
     height: 180px;
+    width: 100%;
     background:#8B4513;
 }
 #cabecalhoMaster h1{
@@ -36,6 +42,7 @@
     /*color: deepskyblue;*/
     color:  white;
     text-shadow: 1px 1px 1px #ffffff;
+    
    
 }
 
@@ -165,6 +172,13 @@ section#conteudo-view form input[type ="submit"] {
     
 }
 
+section#conteudo-view form input[type ="submit"]:hover {
+    
+    color: black;
+    
+    
+}
+
 /*
 ===================================================
         CSS MENU LATERAL VIEW
@@ -176,9 +190,10 @@ section#conteudo-view form input[type ="submit"] {
 
     float: left;
     width: 250px;
-    height: 350px;
+    height: 100%;
     background:#A0522D;
     border-right: 1px solid white;
+    padding: 150px 0px 0px 0px;
 
 
 }
@@ -192,28 +207,264 @@ section#conteudo-view form input[type ="submit"] {
 #lateralPrincipal ul li{
     float: left;
     width: 100%;
+    height: 100px;
+    
     
 
 }
-#lateralPrincipal ul li a{
-    float: left;
+.testeBotao{
+
+    background-color: transparent;
+    border: 0;
+    color: #00f;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    text-decoration: underline;
+
+    font-size: 1.6em;
+    font-family:  Times, serif;
+    font-weight: bold;
+
     width: 100%;
-    height: 50px;
+    height: 100px;
     border-bottom: 1px solid white;
+    border-top: 1px solid white;
     color: white;
 }
-#lateralPrincipal ul li a h3{
-    padding: 0.2cm 0cm 0cm 0cm;
-    font-size: 1.5em;
-    color: inherit;
-    text-shadow: 0.5px 0.5px 0.5px #ffffff;
+
+  
+
+
+
+
+/*
+===================================================
+        CSS HOMEPAGE VIEW
+===================================================
+
+*/
+
+#firulaHome{
     
+    width: 800px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;    
+    position: absolute;
+    top: 25%;
+    left: 25%;
+        
 }
-#lateralPrincipal ul li a:hover{
-    color: black;
+
+#firulaHome h1{
+    padding: 0.5cm 0cm 0cm 0cm;
+    font-size: 3em;
+    /*color: deepskyblue;*/
+    color:  rgba(146,101,71,1);
+    text-shadow: 1px 1px 1px #ffffff;
+    text-align: center;
 
 }
-#lateralPrincipal{
+
+/*
+===================================================
+        CSS PLANETA VIEW
+===================================================
+
+*/
+
+
+.formInterno{
+
+    width: 60%;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.7);
+   
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    
+    
 }
-#lateralPrincipal{
+/*DIV PLANETA INSERIR*/
+#planetaInserir h3{
+    padding: 0.5cm 0cm 0cm 0cm;
+    font-size: 4em;
+    color:  rgba(146,101,71,1);
+    text-shadow: 1px 1px 1px #ffffff;
+    text-align: center;
+}
+
+
+
+
+#planetaInserir form{
+    padding-top: 50px;
+}
+
+#planetaInserir form input{
+    height: 40px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#planetaInserir form input[type ="submit"] {
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+    width: 20%;
+    height: 10%;
+    padding-top: 12px;
+    margin-top: 20px;
+    margin-left: 700px;
+    border-radius: 10px;
+    background-color: rgba(146,101,71,1);
+}
+
+#planetaInserir form input[type ="submit"]:hover {
+    color: black;
+}
+
+#planetaInserir span{
+    padding-left: 70px;
+    font-size: 1.8em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px #ffffff;
+    color:  rgba(146,101,71,1);
+}
+
+
+#nome_planetaInserir input{
+    width: 70%;
+}
+
+
+#tamanho_planetaInserir input{
+    width: 30%;     
+}
+
+#massa_planetaInserir input{
+    width: 30%;
+}
+
+#gravidade_planetaInserir input{
+    width: 30%;
+}
+
+#composicao_planetaInserir input{
+    width: 60%;
+}
+
+/*DIV PLANETA CONSULTAR*/
+
+#planetaConsultar{
+    height: 300px;
+}
+#planetaConsultar h3{
+    padding: 0.5cm 0cm 0cm 0cm;
+    font-size: 4em;
+    color:  rgba(146,101,71,1);
+    text-shadow: 1px 1px 1px #ffffff;
+    text-align: center;
+}
+
+#planetaConsultar form{
+    padding-top: 40px;
+}
+
+#planetaConsultar form input{
+    height: 30px;
+    border-radius: 7.5px;
+    padding: 20px 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    width: 30%;
+}
+
+#planetaConsultar form input[type ="submit"] {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    width: 25%;
+    height: 40px;
+    padding-top:10px ;
+    margin-left: 30px;
+    border-radius: 7.5px;
+    background-color: rgba(146,101,71,1);
+}
+
+#planetaConsultar form input[type ="submit"]:hover {
+    color: black;
+}
+
+#planetaConsultar span{
+    padding-left: 70px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px #ffffff;
+    color:  rgba(146,101,71,1);
+}
+
+
+/*DIV PLANETA ALTERAR BD*/
+
+#planetaAlterarBD{
+    height: 500px;
+}
+#planetaAlterarBD h3{
+    padding: 0.5cm 0cm 0cm 0cm;
+    font-size: 4em;
+    color:  rgba(146,101,71,1);
+    text-shadow: 1px 1px 1px #ffffff;
+    text-align: center;
+}
+
+#planetaAlterarBD form{
+    padding-top: 40px;
+}
+
+#planetaAlterarBD form input{
+    height: 30px;
+    border-radius: 7.5px;
+    padding: 20px 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    width: 30%;
+}
+
+#planetaAlterarBD form input[type ="submit"] {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    width: 25%;
+    height: 40px;
+    padding-top:10px ;
+    margin-left: 30px;
+    border-radius: 7.5px;
+    background-color: rgba(146,101,71,1);
+}
+
+#planetaAlterarBD form input[type ="submit"]:hover {
+    color: black;
+}
+
+#planetaAlterarBD span{
+    padding-left: 70px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px #ffffff;
+    color:  rgba(146,101,71,1);
+}
+
+
+#{
+
 }

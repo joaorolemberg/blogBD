@@ -25,66 +25,50 @@ class DashboardController extends Controller
         $this->validator  = $validator;
     }
 
+    
     public function auth(Request $request){
 
         $data=[
             'username'=> $request->get('username'),
             'password'=> $request->get('password')
-        ]; 
+        ];
+
         try{
-        if(Auth::attempt($data,false)){
-            if (auth()->check()){
+            if(Auth::attempt($data,false)){
+                
                 return redirect()->route('user.homepage');
-            }
-            
         
-        }else{
-            $user = $this->repository->findwhere(['username'=>$request->get('username')])->first();
-            
-            if(!$user){
-                throw new Exception("username nao encontrado");
             }else{
-                throw new Exception("Senha invalida");
+                $user = $this->repository->findwhere(['username'=>$request->get('username')])->first();
+                
+                if(!$user){
+                    throw new Exception("username nao encontrado");
+                }else{
+                    throw new Exception("Senha invalida");
+                }
+
+            
             }
-
-            
-        }
-    }catch(Exception $e){
-        return $e->getMessage();
-    }     
-        /*
-        try{
-            
-            $user = $this->repository->findwhere(['username'=>$request->get('username')])->first();  
-
-            if(!$user){
-                throw new Exception("username nao encontrado");
-                return false;
-
-            }else if($user->password !=$request->get('password')){
-                throw new Exception("Senha invalida");
-                return false;
-
-                    }else {
-                        Auth::attempt($data,false);
-                        //Auth::login($user);
-                        return redirect()->route('user.homepage');
-                        
-                        
-                        
-                    }
-            
-           
-           
-
         }catch(Exception $e){
             return $e->getMessage();
-        }
-        */ 
-
+        }     
+        
         dd($request->all());
         
     }
+    public function auth2(){
+        return redirect()->route('user.homepage');
 
+    }
+
+
+    public function logout(){
+        //Auth::logout();
+        return redirect()->route('user.login');
+    }
+    
+    public function planetaHome(){
+        return view('user.planeta');
+    }
         
 }
